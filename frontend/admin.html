@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cravings - Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sweet Cravings Bakery</h1>
+        <p>Admin Dashboard</p>
+    </header>
+
+    <main>
+        <section class="admin-login" id="loginSection">
+            <h2>Admin Login</h2>
+
+            <form id="loginForm">
+                <input type="text" id="username"
+                    placeholder="Enter Username" required>
+
+                <input type="password" id="password"
+                    placeholder="Enter Password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p id="loginMessage"></p>
+        </section>
+
+        <section id="dashboard" style="display: none;">
+            <h2>Welcome, Admin!</h2>
+            <h3>Customer Orders</h3>
+
+            <div id="ordersContainer"></div>
+
+            <button onclick="logout()">Logout</button>
+        </section>
+    </main>
+<script src="admin.js"></script>
+</body>
+</html>
